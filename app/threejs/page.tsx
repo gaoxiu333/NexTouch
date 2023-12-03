@@ -4,13 +4,14 @@ import React, { useRef } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
 import { Mesh } from "three";
 
 function MeshComponent() {
   // 获取模型
-  const fileUrl = "/donat.glb";
+  const fileUrl = "/donat.obj";
   const mesh = useRef<Mesh>(null!);
-  const gltf = useLoader(GLTFLoader, fileUrl);
+  const gltf = useLoader(OBJLoader, fileUrl);
 
   // 旋转动画
   useFrame(() => {
@@ -19,7 +20,7 @@ function MeshComponent() {
 
   return (
     <mesh ref={mesh}>
-      <primitive object={gltf.scene} />
+      <primitive object={gltf} />
     </mesh>
   );
 }
