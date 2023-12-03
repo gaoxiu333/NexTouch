@@ -12,10 +12,12 @@ TODO
 ## threejs
 
 [doc](https://threejs.org/docs/#manual/en/introduction/Loading-3D-models)
+[react three fiber](https://github.com/pmndrs/react-three-**fiber**)
+[react three helper](https://github.com/pmndrs/drei)
 
 ## 3d 模型格式
 
-- `GLB`,`GLTF`,`COLLADA`, `OBJ`,`FBX`
+- `GLB`,`GLTF`,`COLLADA`, `OBJ`,`FBX`,`SLT`,`USFD`
 
 **GLB (GLTF Binary):**
 
