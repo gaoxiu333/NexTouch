@@ -17,7 +17,7 @@ function MeshComponent() {
   //   useFrame(() => {
   //     mesh.current.rotation.y += 0.01;
   //   });
-  const mationns = useAnimations(gltf.animations);
+  const mationns:any = useAnimations(gltf.animations);
   useEffect(() => {
     console.log("actions", mationns);
     // actions?.jump.paly()
