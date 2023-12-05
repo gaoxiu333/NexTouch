@@ -18,7 +18,7 @@ function MeshComponent() {
   useEffect(()=>{
     animations.actions['donatAction.001']?.play()
   })
-  // 旋转动画
+  // 旋转动画 
   //   useFrame(() => {
   //     mesh.current.rotation.y += 0.01;
   //   });
