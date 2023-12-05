@@ -24,7 +24,7 @@ function MeshComponent() {
     mationns.actions["The Life"]?.play();
   });
   return (
-    <mesh ref={mationns.ref}>
+    <mesh ref={mationns?.ref}>
       <primitive object={gltf.scene} />
     </mesh>
   );
