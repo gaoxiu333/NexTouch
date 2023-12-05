@@ -14,7 +14,7 @@ function MeshComponent() {
   const gltf = useGLTF(fileUrl);
   const animations = useAnimations(gltf.animations,gltf.nodes['donat']);
   console.log(gltf);
-  console.log('animations',animations)
+  console.log('animations__',animations)
   useEffect(()=>{
     animations.actions['donatAction.001']?.play()
   })
