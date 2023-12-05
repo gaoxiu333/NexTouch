@@ -1,22 +1,27 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, useAnimations, useGLTF } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
 import { Mesh } from "three";
 
 function MeshComponent() {
   // 获取模型
-  const fileUrl = "/book/scene.gltf";
+  const fileUrl = "/donat/donat.gltf";
   const mesh = useRef<Mesh>(null!);
-  const gltf = useLoader(GLTFLoader, fileUrl);
-
+  const gltf = useGLTF(fileUrl);
+  const animations = useAnimations(gltf.animations,gltf.nodes['donat']);
+  console.log(gltf);
+  console.log('animations',animations)
+  useEffect(()=>{
+    animations.actions['donatAction.001']?.play()
+  })
   // 旋转动画
-//   useFrame(() => {
-//     mesh.current.rotation.y += 0.01;
-//   });
+  //   useFrame(() => {
+  //     mesh.current.rotation.y += 0.01;
+  //   });
 
   return (
     <mesh ref={mesh}>
