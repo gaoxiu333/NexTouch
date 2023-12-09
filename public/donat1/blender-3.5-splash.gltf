@@ -5,59 +5,15 @@
 	},
 	"extensionsUsed":[
 		"KHR_materials_specular",
-		"KHR_materials_ior",
-		"KHR_lights_punctual"
+		"KHR_materials_ior"
 	],
-	"extensionsRequired":[
-		"KHR_lights_punctual"
-	],
-	"extensions":{
-		"KHR_lights_punctual":{
-			"lights":[
-				{
-					"color":[
-						0.9473763108253479,
-						0.9899536371231079,
-						1
-					],
-					"intensity":543514.1306588226,
-					"type":"point",
-					"name":"\u70b9\u5149"
-				},
-				{
-					"color":[
-						1,
-						1,
-						1
-					],
-					"intensity":86962.2609054116,
-					"type":"point",
-					"name":"\u70b9\u5149.001"
-				},
-				{
-					"color":[
-						0.9473763108253479,
-						0.9899536371231079,
-						1
-					],
-					"intensity":5435.141306588225,
-					"type":"point",
-					"name":"\u70b9\u5149.002"
-				}
-			]
-		}
-	},
 	"scene":0,
 	"scenes":[
 		{
 			"name":"Scene",
 			"nodes":[
 				0,
-				1,
-				7,
-				8,
-				9,
-				10
+				6
 			]
 		}
 	],
@@ -68,15 +24,6 @@
 				1.5675235986709595,
 				0.4016668200492859,
 				-1.2126240730285645
-			]
-		},
-		{
-			"camera":0,
-			"name":"Camera",
-			"translation":[
-				-0.0006503185722976923,
-				0.01662709005177021,
-				0.19763299822807312
 			]
 		},
 		{
@@ -117,10 +64,10 @@
 		},
 		{
 			"children":[
+				1,
 				2,
 				3,
-				4,
-				5
+				4
 			],
 			"mesh":4,
 			"name":"icing",
@@ -132,7 +79,7 @@
 		},
 		{
 			"children":[
-				6
+				5
 			],
 			"mesh":5,
 			"name":"donat",
@@ -147,75 +94,6 @@
 				0.01852182112634182,
 				0.0007210588664747775
 			]
-		},
-		{
-			"extensions":{
-				"KHR_lights_punctual":{
-					"light":0
-				}
-			},
-			"name":"\u70b9\u5149",
-			"rotation":[
-				-0.7071068286895752,
-				0,
-				0,
-				0.7071068286895752
-			],
-			"translation":[
-				-9.480568885803223,
-				11.231867790222168,
-				4.390545845031738
-			]
-		},
-		{
-			"extensions":{
-				"KHR_lights_punctual":{
-					"light":1
-				}
-			},
-			"name":"\u70b9\u5149.001",
-			"rotation":[
-				-0.7071068286895752,
-				0,
-				0,
-				0.7071068286895752
-			],
-			"translation":[
-				6.711805820465088,
-				-7.148014545440674,
-				0.3540957570075989
-			]
-		},
-		{
-			"extensions":{
-				"KHR_lights_punctual":{
-					"light":2
-				}
-			},
-			"name":"\u70b9\u5149.002",
-			"rotation":[
-				-0.7071068286895752,
-				0,
-				0,
-				0.7071068286895752
-			],
-			"translation":[
-				1.8167425394058228,
-				0.46578097343444824,
-				-3.7852792739868164
-			]
-		}
-	],
-	"cameras":[
-		{
-			"name":"Camera",
-			"perspective":{
-				"aspectRatio":0.75,
-				"yfov":0.8457078337669373,
-				"zfar":100,
-				"znear":0.009999999776482582
-			},
-			"type":"perspective"
 		}
 	],
 	"animations":[
@@ -224,7 +102,7 @@
 				{
 					"sampler":0,
 					"target":{
-						"node":7,
+						"node":6,
 						"path":"rotation"
 					}
 				}
@@ -730,7 +608,7 @@
 	"buffers":[
 		{
 			"byteLength":549028,
-			"uri":"donat.bin"
+			"uri":"blender-3.5-splash.bin"
 		}
 	]
 }
